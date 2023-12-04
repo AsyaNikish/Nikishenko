@@ -1,0 +1,521 @@
+body {
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    
+
+}
+*,
+* :before
+:after{
+    -webkit-box-sizing: border-box; 
+    }
+
+h1 {
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+    
+
+.container {
+    display: inline;
+    
+
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/intro.jpg) center
+        no-repeat;
+        
+        padding-top: 100px;
+    
+    }
+
+.intro_inner {
+    color: #000000;
+    text-align: center;
+   
+}
+
+.intro_title {
+    font-size: 70px;
+    font-family: 100;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+    justify-content: center;
+}
+
+.intro_suptitle {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    justify-content: center;
+
+
+}
+.header {
+    
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1000;
+}
+.header_inner{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    
+
+}
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    transition: color .1s linear;
+    margin-right: 100px;
+}
+.nav_link::after {
+    content: "" ;
+    display: block;
+    width: 65px;
+    height: 1px;
+    background-color: darkorange;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+    
+}
+.nav_link:hover {
+    color: darkorange;
+}
+.nav_link:hover::after {
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 100;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    margin: 70px;
+    transition: background .1s linear, color .1s linear;
+}
+.btn:hover {
+    background: #ffffff;
+    color: #000000;
+
+}
+
+.section {
+    padding: 100px;
+    display: inline;
+
+}
+
+
+.section_suptitle {
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #000000;
+    margin: 20px;
+    display: block;
+    padding-left: 100;
+
+
+}
+.section_title {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    max-width: 500px;
+    display: inline;
+    float: left;
+    position: relative;
+    padding-left: 100px;
+
+}
+
+.about_me {
+    justify-content: space-between;
+    float: left;
+    display: inline;
+    padding-right: 15px;
+    width: 40%;
+    padding-top: 200px;
+    padding-left: 140px;
+    font-size: 13px;
+    color: #000000;
+    font-weight: 50;
+
+}
+.about_text{
+    font-size: 20px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.about_img {
+    
+    justify-content: space-between;
+    float: right;
+    padding-right: 15px;
+    display: inline;
+    padding-top: 50px;
+    
+}
+.main {
+padding-top: 500px;
+}
+.What_i_can_do{
+
+padding: 45px 0 16px;
+text-align: center;
+
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  background-color: #000000;
+  background: url(../images/Background.jpg) center
+  no-repeat;
+}
+.What_i_can_do_for_you {
+    padding-top: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+   
+.Together {
+    position: relative;
+    justify-content: space-between;
+    
+  
+    padding-left: 15px;
+    display: inline;
+   
+}
+   
+
+.image-container {
+    position: relative;
+    width: 220px; /* Breite des Bildcontainers */
+    height: 473px; /* Höhe des Bildcontainers */
+    background-color: #ffffff;
+}
+  
+.hover-image {
+    padding-top: 0;
+    width: 100%; /* Vollständige Breite des Containers */
+    height: 100%; /* Automatische Anpassung der Höhe */
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */
+}
+  
+.hover-text {
+    text-align: left;
+    width: 220px; /* Breite des Bildcontainers */
+    height: 220px;
+    position: absolute;
+    padding-top: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Text zu Beginn unsichtbar machen */
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
+}
+  
+.image-container:hover .hover-image {
+    opacity: 0; /* Bild wird beim Überfahren unsichtbar */
+    background-color: #ffffff;
+}
+  
+.image-container:hover .hover-text {
+    opacity: 1; /* Text wird beim Überfahren sichtbar */
+    font-family: 'Comfortaa', sans-serif;
+}
+  
+
+
+
+
+.image-container2 {
+    position: relative;
+    width: 220px; /* Breite des Bildcontainers */
+    height: 473px; /* Höhe des Bildcontainers */
+    background-color: #ffffff;
+}
+
+.hover-image-Portrets {
+    padding-top: 0;
+    width: 100%; /* Vollständige Breite des Containers */
+    height: 100%; /* Automatische Anpassung der Höhe */
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
+}
+
+.hover-text-Portrets {
+   
+    width: 220px; /* Breite des Bildcontainers */
+    height: 220px;
+    position: absolute;
+    padding-top: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Comfortaa', sans-serif;
+    white-space: pre-line; /* або white-space: pre-wrap; */
+    opacity: 0; /* Text zu Beginn unsichtbar machen */
+    font-size: 18px; Übergang der Sichtbarkeit und Textfarbe */
+}
+
+.image-container2:hover .hover-image-Portrets {
+    opacity: 0; /* Bild wird beim Überfahren unsichtbar */
+    background-color: #ffffff;
+}
+  
+.image-container2:hover .hover-text-Portrets {
+    opacity: 1; /* Text wird beim Überfahren sichtbar */
+}
+
+
+
+
+
+
+
+.image-container3 {
+    position: relative;
+    width: 220px; /* Breite des Bildcontainers */
+    height: 473px; /* Höhe des Bildcontainers */
+    background-color: #ffffff;
+}
+
+.hover-image-my_works {
+    padding-top: 0;
+    width: 100%; /* Vollständige Breite des Containers */
+    height: 100%; /* Automatische Anpassung der Höhe */
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
+}
+
+.hover-text-my_works {
+    width: 220px; /* Breite des Bildcontainers */
+    height: 220px;
+    position: absolute;
+    padding-top: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Text zu Beginn unsichtbar machen */
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
+}
+  
+
+.image-container3:hover .hover-image-my_works {
+    opacity: 0; /* Bild wird beim Überfahren unsichtbar */
+    background-color: #ffffff;
+}
+  
+.image-container3:hover .hover-text-my_works {
+    opacity: 1; /* Text wird beim Überfahren sichtbar */
+}
+
+
+
+
+
+.image-container4 {
+    position: relative;
+    width: 220px; /* Breite des Bildcontainers */
+    height: 473px; /* Höhe des Bildcontainers */
+    background-color: #ffffff;
+}
+
+.hover-image-webdesign {
+    padding-top: 0;
+    width: 100%; /* Vollständige Breite des Containers */
+    height: 100%; /* Automatische Anpassung der Höhe */
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
+}
+
+.hover-text-webdesign {
+    width: 220px; /* Breite des Bildcontainers */
+    height: 220px;
+    position: absolute;
+    padding-top: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Text zu Beginn unsichtbar machen */
+    font-size: 18px;
+    white-space: pre-line; /* або white-space: pre-wrap; */
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
+}
+  
+
+.image-container4:hover .hover-image-webdesign {
+    opacity: 0; /* Bild wird beim Überfahren unsichtbar */
+    background-color: #ffffff;
+}
+  
+.image-container4:hover .hover-text-webdesign {
+    opacity: 1; /* Text wird beim Überfahren sichtbar */
+}
+
+
+
+  
+.image-container5 {
+    position: relative;
+    width: 220px; /* Breite des Bildcontainers */
+    height: 473px; /* Höhe des Bildcontainers */
+    background-color: #ffffff;
+}
+
+.hover-image-Workshop {
+    padding-top: 0;
+    width: 100%; /* Vollständige Breite des Containers */
+    height: 100%; /* Automatische Anpassung der Höhe */
+    transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
+}
+
+.hover-text-workshop {
+    width: 220px; /* Breite des Bildcontainers */
+    height: 220px;
+    position: absolute;
+    padding-top: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Text zu Beginn unsichtbar machen */
+    font-size: 18px;
+    white-space: pre-line; /* або white-space: pre-wrap; */
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
+  }
+  
+
+  .image-container5:hover .hover-image-Workshop {
+    opacity: 0; /* Bild wird beim Überfahren unsichtbar */
+    background-color: #ffffff;
+  }
+  
+  .image-container5:hover .hover-text-workshop {
+    opacity: 1; /* Text wird beim Überfahren sichtbar */
+  }
+
+
+
+
+
+
+
+
+.container_{
+    padding-top: 50px;
+    width: 100%;
+    height: 600px;
+}
+
+.and_more2 {
+    padding-left: 200px;
+}
+
+.and_more_3 {
+    max-width: 600px;
+    justify-content: space-between;
+    float: right;
+    padding-right: 100px;
+    display: inline;
+    padding-top: 150px;
+    white-space: pre-line;
+}
+
+.contacts_down {
+    position: relative;
+    display: inline;
+    width: 100%;
+    height: 562px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.emaill {
+    padding-left: 100px;
+    display: inline;
+    width: 100%;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text_email {
+    padding-left: 10px;
+    display: inline;
+    width: 100%;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+
