@@ -27,7 +27,7 @@ h4{
 }
     
     .intro {
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
         width: 100%;
