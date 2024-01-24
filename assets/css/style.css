@@ -1,10 +1,12 @@
 body {
-    margin: 0%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    color: #333;
-    line-height: 1.6;
-    background: url(../images/background2.png);
+  margin: 0%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  background: url(../images/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
 margin: 0;
@@ -89,14 +91,17 @@ font-family: 'Montserrat', sans-serif;
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.intro {
+.background-container {
+  position: relative;
+  background: url(../images/intro.jpg) center/cover no-repeat; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background: url(../images/intro.jpg) center
-  no-repeat;  
+  align-items: center; /* Zentriere die Kinder horizontal */
+  justify-content: center; /* Zentriere die Kinder vertikal */
+  z-index: 1;
+  padding-top: 10px; /* Platz für die Navbar */
+  margin: 0;
 }
 .whitebackground { 
   width: 100%;
@@ -109,268 +114,144 @@ font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 340px;
 }
-.intro_title {
-  font-size: 70px;
-  font-family: 100;
+h1 {
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+  font-size: 2em; /* Ändern Sie die Schriftgröße nach Bedarf */
+  font-family: 'Kaushan Script', cursive;
+}
+
+h2 {
+  font-size: 4em; /* Ändern Sie die Schriftgröße nach Bedarf */
+  margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.1;
-  justify-content: center;
 }
-.intro_suptitle {
-  padding-top: 10px;
-  font-size: 30px;
+h3 {
   color: #000000;
-  font-family: 'Kaushan Script', cursive;
   text-align: center;
   justify-content: center;
+  margin-top: 30px;
+  font-size: 2em; /* Ändern Sie die Schriftgröße nach Bedarf */
+  font-family: 'Kaushan Script', cursive;
 }
-.btn {
-  height: 40px;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-left: 29%;
-  vertical-align: top;
-  text-align:center;
-  font-size: 16px;
-  opacity: 0,1;
-  background: rgba(255, 255, 255, 0.7);
+.button {
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  color: #000; /* Black text color */
+  font-size: larger;
+  padding: 3px 200px; /* Adjust padding as needed */
+  border: none;
   border-radius: 1px;
+  margin-top: 10px; /* Adjust margin as needed */
+  cursor: pointer;
   color: #333;
   text-transform: uppercase;
   text-decoration: none;
 }
 .about_me {
   width: 100%;
-  height: 700px;
+  max-width: 1200px; /* Optional: Setze eine maximale Breite für den Container */
+  margin: 0 auto; /* Zentriere den Container horizontal */
+  height: auto; /* Lasse die Höhe automatisch basierend auf dem Inhalt anpassen */
   display: flex;
+  flex-wrap: wrap; /* Erlaube das Umschlagen von Elementen auf kleinere Bildschirme */
+  justify-content: center; /* Zentriere den Container horizontal */
+  align-items: center; /* Zentriere die Kinder vertikal */
 }
-.about_me_text{
-  padding-top: 20%;
-  padding-left: 30px;
-  width: 50%;
-  height: 50px;
+.about_me_text {
+  padding-top: 5%; /* Ändere den Wert basierend auf deinen Anforderungen */
+  padding-left: 5%; /* Ändere den Wert basierend auf deinen Anforderungen */
+  width: 100%;
+  max-width: 600px; /* Setze eine maximale Breite für den Textcontainer */
   font-family: 'Kaushan Script', cursive;
   font-size: 35px;
 }
-.about_text{
+.about_text {
   font-size: 20px;
   font-family: 'Comfortaa', sans-serif;
-  width: 600px;
-  float: left;
+  max-width: 583px;
+  width: 100%; /* Fülle den verfügbaren Raum im inneren Container */
 }
 .about_img {
   text-align: center;
-  float: right;
-  padding-top: 120px;
-  width: 600px;
-  height: 500px;
-  padding-right: 10px;
-}
-.container {
+  padding-top: 5%; /* Ändere den Wert basierend auf deinen Anforderungen */
   width: 100%;
-  height: 650px;
-  padding-top: 0;
-  background: url(../images/Background.jpg) center
-  no-repeat;
+  max-width: 600px; /* Setze eine maximale Breite für das Bild */
+  height: auto; /* Lasse die Höhe automatisch basierend auf der Breite anpassen */
 }
-.What_i_can_do_for_you {
-  text-align: center;
-  padding: 30px 0px;
+h1.What_i_can_do_for_you {
+  margin-top: 0px;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1000;
 }
-.Together {
+.flex-container {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.flex-item {
+  position: relative;
+  width: 220px; /* Breite des Bildcontainers */
+  height: 473px; /* Höhe des Bildcontainers */
+  background-color: #ffffff;
+  margin: 5px;
+}
+.flex-item img {
   width: 100%;
-  padding: 0px 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(201px, 1fr));
-  grid-gap: 28px; /* Задаем расстояние между ячейками сетки */
+  height: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
 }
-.image-container, .image-container2, .image-container3, .image-container4
-.image-container5 {
-  position: relative;
-  width: 220px; /* Breite des Bildcontainers */
-  height: 473px; /* Höhe des Bildcontainers */
-  background-color: #ffffff;
-}
-.hover-image, .hover-image-Portrets, .hover-image-my_works, .hover-image-webdesign, .hover-image-Workshop  {
-  padding-top: 0;
-  width: 100%; /* Vollständige Breite des Containers */
-  height: 100%; /* Automatische Anpassung der Höhe */
-  transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */
-}
-.hover-text, .hover-text-Portrets, .hover-text-my_works, .hover-text-webdesign, .hover-text-workshop  {
-  width: 220px; /* Breite des Bildcontainers */
-  height: 220px;
+.overlay {
   position: absolute;
-  padding-top: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0; /* Text zu Beginn unsichtbar machen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Hintergrund mit Transparenz */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box; /* Berücksichtigt den Rand in der Gesamtgröße */
+}
+.text {
+  color: #fff;
   font-size: 18px;
-  font-family: 'Comfortaa', sans-serif;
-  text-align: center;
-  transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
-}
-.image-container:hover .hover-image {
-  opacity: 0; /* Bild wird beim Überfahren unsichtbar */
-  background-color: #ffffff;
-}
-.image-container:hover .hover-text {
-  opacity: 1; /* Text wird beim Überfahren sichtbar */
+  white-space: pre-line;
   font-family: 'Comfortaa', sans-serif;
 }
-.image-container2 {
-  position: relative;
-  width: 220px; /* Breite des Bildcontainers */
-  height: 473px; /* Höhe des Bildcontainers */
-  background-color: #ffffff;
+.flex-item:hover img {
+  opacity: 0;
 }
-.hover-image-Portrets {
-  padding-top: 0;
-  width: 100%; /* Vollständige Breite des Containers */
-  height: 100%; /* Automatische Anpassung der Höhe */
-  transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
-}
-.hover-text-Portrets {
-  width: 220px; /* Breite des Bildcontainers */
-  height: 220px;
-  position: absolute;
-  padding-top: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Comfortaa', sans-serif;
-  white-space: pre-line; /* або white-space: pre-wrap; */
-  opacity: 0; /* Text zu Beginn unsichtbar machen */
-  font-size: 18px; Übergang der Sichtbarkeit und Textfarbe */
-}
-.image-container2:hover .hover-image-Portrets {
-  opacity: 0; /* Bild wird beim Überfahren unsichtbar */
-  background-color: #ffffff;
-}
-.image-container2:hover .hover-text-Portrets {
-  opacity: 1; /* Text wird beim Überfahren sichtbar */
-}
-.image-container3 {
-  position: relative;
-  width: 220px; /* Breite des Bildcontainers */
-  height: 473px; /* Höhe des Bildcontainers */
-  background-color: #ffffff;
-}
-.hover-image-my_works {
-  padding-top: 0;
-  width: 100%; /* Vollständige Breite des Containers */
-  height: 100%; /* Automatische Anpassung der Höhe */
-  transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
-}
-.hover-text-my_works {
-  width: 220px; /* Breite des Bildcontainers */
-  height: 220px;
-  position: absolute;
-  padding-top: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0; /* Text zu Beginn unsichtbar machen */
-  font-size: 18px;
-  font-family: 'Comfortaa', sans-serif;
-  text-align: center;
-  transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
-}
-.image-container3:hover .hover-image-my_works {
-  opacity: 0; /* Bild wird beim Überfahren unsichtbar */
-  background-color: #ffffff;
-}
-.image-container3:hover .hover-text-my_works {
-  opacity: 1; /* Text wird beim Überfahren sichtbar */
-}
-.image-container4 {
-  position: relative;
-  width: 220px; /* Breite des Bildcontainers */
-  height: 473px; /* Höhe des Bildcontainers */
-  background-color: #ffffff;
-}
-.hover-image-webdesign {
-  padding-top: 0;
-  width: 100%; /* Vollständige Breite des Containers */
-  height: 100%; /* Automatische Anpassung der Höhe */
-  transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
-}
-.hover-text-webdesign {
-  width: 220px; /* Breite des Bildcontainers */
-  height: 220px;
-  position: absolute;
-  padding-top: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0; /* Text zu Beginn unsichtbar machen */
-  font-size: 18px;
-  white-space: pre-line; /* або white-space: pre-wrap; */
-  font-family: 'Comfortaa', sans-serif;
-  text-align: center;
-  transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
-}
-.image-container4:hover .hover-image-webdesign {
-  opacity: 0; /* Bild wird beim Überfahren unsichtbar */
-  background-color: #ffffff;
-}
-.image-container4:hover .hover-text-webdesign {
-  opacity: 1; /* Text wird beim Überfahren sichtbar */
-}
-.image-container5 {
-  position: relative;
-  width: 220px; /* Breite des Bildcontainers */
-  height: 473px; /* Höhe des Bildcontainers */
-  background-color: #ffffff;
-}
-.hover-image-Workshop {
-  padding-top: 0;
-  width: 100%; /* Vollständige Breite des Containers */
-  height: 100%; /* Automatische Anpassung der Höhe */
-  transition: opacity 0.3s ease; /* Sanfter Übergang der Sichtbarkeit */ 
-}
-.hover-text-workshop {
-  width: 220px; /* Breite des Bildcontainers */
-  height: 220px;
-  position: absolute;
-  padding-top: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0; /* Text zu Beginn unsichtbar machen */
-  font-size: 18px;
-  white-space: pre-line; /* або white-space: pre-wrap; */
-  font-family: 'Comfortaa', sans-serif;
-  text-align: center;
-  transition: opacity 0.3s ease, color 0.3s ease; /* Sanfter Übergang der Sichtbarkeit und Textfarbe */
-}
-.image-container5:hover .hover-image-Workshop {
-  opacity: 0; /* Bild wird beim Überfahren unsichtbar */
-  background-color: #ffffff;
-}
-.image-container5:hover .hover-text-workshop {
-  opacity: 1; /* Text wird beim Überfahren sichtbar */
+.flex-item:hover .overlay {
+  opacity: 1;
 }
 .and_more{
+  gap: 25px;
   padding-top: 200px;
   width: 100%;
   display: flex;
 }
 .and_more2 {
   padding-left: 20%;
-  background-color: #ffffff;
 }
 .and_more_3 {
   padding-right: 100px;
   padding-top: 150px; 
+  font-size: 2em;
+  font-family: 'Kaushan Script', cursive;
 }
 .footer{
-  margin-top: 100px;
+  margin-top: 200px;
+  height: 75px;
   justify-content: center;
   display: flex;
   gap: 25px; /* ВідступS між фотографією і текстом */
@@ -378,9 +259,9 @@ font-family: 'Montserrat', sans-serif;
 footer a{
   display: inline-block;
   font-family: 'Comfortaa', sans-serif;
+  font-size: 21px;
   color: black;
   text-decoration: none;
-  
 } 
 .footer a::after {
   content: "" ;
@@ -403,19 +284,34 @@ footer a{
 }
 .gmail{
   vertical-align: top;
-  height: 20px; 
+  height: 30px; 
   display: inline-block;      
   background-size: cover;
 }
 .gmail_text{
   font-family: 'Comfortaa', sans-serif;
-  font: 15px;
+  font: 24px;
 }
 .gmail:hover,
 .gmail:focus{
   filter: invert(27%) sepia(51%) saturate(2878%);
 }
 
-
+@media screen and (max-width: 600px) {
+  .about_me {
+    display: flex;
+    padding-top: 20px; /* Adjust margin as needed */
+    flex-direction: column;
+ }
+ .about_me_text {
+  margin-bottom: 1em;
+  display: block;
+ }
+ .about_img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+ }
+}
 
 
