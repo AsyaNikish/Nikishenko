@@ -6,16 +6,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Josefin+Slab:wght@100&family=Kaushan+Script&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
    	<title>NIKISHENKO</title>
-	<script src="Nikishenko/script.js"></script>
+	<script src="/Nikishenko/script.js"></script>
 </head>
 <body>
 	<div class="navbar">
-		<a href="https://nikishenko.com/">HOME</a>
+		<a href="index.html">HOME</a>
 		<div class="dropdown">
-			<button class="dropbtn" onclick="myFunction()">WORKS<i class="fa fa-caret-down"></i></button>
+			<button class="dropbtn" onclick="myFunction()">WORKS<i></i></button>
 			<div class="dropdown-content" id="myDropdown">
-				<a href="https://nikishenko.com/Pfotoshooting/photoshooting.html">PHOTOSHOOTING</a>
-				<a href="https://nikishenko.com/Works.html">PAINTINGS</a>
+				<a href="Pfotoshooting/photoshooting.html">PHOTOSHOOTING</a>
+				<a href="Works.html">PAINTINGS</a>
 			</div>
 		</div> 
 		<a href="#footer">CONTACT</a>
@@ -29,90 +29,73 @@
 		<a class="button" href="#about_me" >More about</a>
     </div>
 	<div class="about_me" id="about_me">
-		<div class="about_me_text">...about me...
-			<div class="about_text">Hi! My name is Asya. I am 28 year old and 
+		<div class="about_me_text">
+			...about me...		
+			<div class="about_text">Hi! My name is Asya. I am 29 year old and 
 				I am a Master of Fine Arts and graduated 
 				from the Odessa Academy of Civil Engineering and Architecture in 2018.
 				Because of the russian attack on my country I had to flee. 
 				Now I live in Nuremberg, Germany, and continue to pursue my art.
 			</div>
 		</div>
-		<div class="about_img">
-			<img src="assets/images/about_me.jpg" alt="">
-		</div>
+		<img src="assets/images/about_me.jpg">
 	</div>
-	<div>	
+	<section class="whatcanidoforu">	
 		<h1 class="What_i_can_do_for_you"> ~ What i can do for you ~ </h1>
 		<div class="flex-container">
-			<a href="https://nikishenko.com/Pfotoshooting/photoshooting.html">
-			<div class="flex-item">
-				<img src="assets/images/photoshooting.jpg" alt="">
+			<a class="flex-item" href="https://nikishenko.com/Pfotoshooting/photoshooting.html">
+				<img src="assets/images/photoshooting_1-2.jpg" >
 				<div class="overlay">
-					<div class="text">
-						Photoshooting
-					</div>
+					Photoshooting
 				</div>
-			</div>
 			</a>
 			<div class="flex-item">
-				<img src="assets/images/Portrets.jpg" alt="">
+				<img src="assets/images/Portraits_1-2.jpg" >
 				<div class="overlay">
-					<div class="text">
 						Portrets
 						Caricatures
-					</div>
 				</div>
 			</div>
-			<a href="https://nikishenko.com/Works.html">
-			<div class="flex-item">
-				<img src="assets/images/my_works.jpg" alt="">
+			<a class="flex-item" href="https://nikishenko.com/Works.html">
+				<img src="assets/images/my_works_1-2.jpg">
 				<div class="overlay">
-					<div class="text">
 						Gallery
-					</div>
 				</div>
-			</div>
 			</a>
-			<div class="flex-item">
-				<img src="assets/images/visiten_carten.jpg" alt="">
+			<a class="flex-item">
+				<img src="assets/images/visiten_carten_1-2.jpg">
 				<div class="overlay">
-					<div class="text">
 						Flyers
 						Business cards
 						Logo
-					</div>
 				</div>
-			</div>
-			<div class="flex-item">
-				<img src="assets/images/workshop.jpg" alt="">
+			</a>
+			<a class="flex-item">
+				<img src="assets/images/workshop_1-2.jpg" >
 				<div class="overlay">
-					<div class="text">
 						Master-classes
 						Private Lessons
-					</div>
 				</div>
-			</div>
+			</a>
 		</div>
-	</div>
+	</section>
 	
 	<section class="and_more">
-		<img src="assets/images/me.png" alt="" class="and_more2">
-	    <p class="and_more_3">
+		<img src="assets/images/me.png">
+	    <div class="and_more_3">
 		I can do tatoo-sketching, tatoos, web-design, 
 	    sketchnotes and more...just ask me for you favorite picture :) 
-        </p>
+		</div>
 	</section>
 	
 	<footer id="footer" class="footer">
-		<a href="mailto:asyanikish@gmail.com">
-				<object data="Pfotoshooting/photoshooting/gmail.svg" type="image/svg+xml" class="gmail">
-				</object>
-				asyanikish@gmail.com
+		<a id="icon" href="mailto:asyanikish@gmail.com">
+			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 43.753906 6.4023438 C 42.53621 6.3489969 41.294792 6.712898 40.271484 7.46875 L 37.525391 9.4960938 L 25 18.755859 L 12.591797 9.5839844 A 1.0001 1.0001 0 0 0 11.949219 9.3007812 L 12.199219 9.3007812 L 9.734375 7.4765625 C 8.7104042 6.7188363 7.4671493 6.3528895 6.2480469 6.40625 C 5.0289444 6.4596105 3.8349462 6.9314667 2.9082031 7.8457031 C 1.7309454 9.0063798 1 10.629831 1 12.410156 L 1 15.84375 A 1.0001 1.0001 0 0 0 1 16.138672 L 1 39.5 C 1 41.421188 2.5788117 43 4.5 43 L 12 43 A 1.0001 1.0001 0 0 0 13 42 L 13 25.373047 L 24.40625 33.804688 A 1.0001 1.0001 0 0 0 25.59375 33.804688 L 37 25.373047 L 37 42 A 1.0001 1.0001 0 0 0 38 43 L 45.5 43 C 47.421188 43 49 41.421188 49 39.5 L 49 16.119141 A 1.0001 1.0001 0 0 0 49 15.859375 L 49 12.410156 C 49 10.6517 48.290455 9.0357821 47.128906 7.8730469 C 47.095336 7.8394769 47.084086 7.83018 47.097656 7.84375 A 1.0001 1.0001 0 0 0 47.091797 7.8378906 C 46.165242 6.9256756 44.971603 6.4556905 43.753906 6.4023438 z M 43.644531 8.4003906 C 44.400835 8.4300436 45.134049 8.7168876 45.689453 9.2636719 C 45.708363 9.2823439 45.722171 9.2964424 45.712891 9.2871094 C 46.50934 10.084374 47 11.188613 47 12.410156 L 47 15.496094 L 39 21.408203 L 39 11 A 1.0001 1.0001 0 0 0 38.996094 10.898438 L 41.458984 9.078125 A 1.0001 1.0001 0 0 0 41.460938 9.078125 C 42.109578 8.598977 42.888228 8.3707375 43.644531 8.4003906 z M 6.3574219 8.40625 C 7.1145694 8.37661 7.8958927 8.6037105 8.5449219 9.0839844 L 11.003906 10.902344 A 1.0001 1.0001 0 0 0 11 11 L 11 21.408203 L 3 15.496094 L 3 12.410156 C 3 11.174482 3.5017577 10.068855 4.3125 9.2695312 C 4.8677569 8.7217677 5.6002743 8.4358895 6.3574219 8.40625 z M 37 12.371094 L 37 22.886719 L 25 31.755859 L 13 22.886719 L 13 12.373047 L 24.40625 20.804688 A 1.0001 1.0001 0 0 0 25.59375 20.804688 L 37 12.371094 z M 3 17.982422 L 11 23.896484 L 11 41 L 4.5 41 C 3.6591883 41 3 40.340812 3 39.5 L 3 17.982422 z M 47 17.982422 L 47 39.5 C 47 40.340812 46.340812 41 45.5 41 L 39 41 L 39 23.896484 L 47 17.982422 z"/></svg>				</object>
+			<div class="gmail">asyanikish@gmail.com</div>
 		</a>
-		<a href="https://www.instagram.com/asyanikishphoto/?img_index=1"> 
-			<object data="Pfotoshooting/photoshooting/instagram.svg" type="image/svg+xml" class="gmail">
-			</object>	 
-			asyanikish
+		<a id="icon" href="https://www.instagram.com/asyanikishphoto/?img_index=1"> 
+			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg>			</object>	 
+			<div class="gmail">asyanikish</div>
 		</a>
 	</footer>
 </body>
